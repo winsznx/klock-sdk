@@ -1,0 +1,51 @@
+{
+  "name": "@winsznx/sdk",
+  "version": "0.1.2",
+  "description": "Official TypeScript SDK for integrating with the PULSE protocol on Base and Stacks.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "test": "node \"$npm_execpath\" run build && node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "pulse",
+    "sdk",
+    "base",
+    "stacks",
+    "web3"
+  ],
+  "author": "PULSE Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winsznx/klock-sdk.git"
+  },
+  "homepage": "https://github.com/winsznx/klock-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/winsznx/klock-sdk/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@stacks/transactions": "^7.3.1",
+    "viem": "^2.43.3"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
