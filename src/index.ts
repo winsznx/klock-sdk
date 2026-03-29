@@ -50,3 +50,4 @@ export type {
     StacksUserProfile,
     SupportedBaseChainId,
 } from './types.js'
+export const getSDKVersion = () => '0.1.5';
