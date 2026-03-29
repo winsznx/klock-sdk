@@ -1,6 +1,6 @@
 {
   "name": "@winsznx/sdk",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Official TypeScript SDK for integrating with the PULSE protocol on Base and Stacks.",
   "type": "module",
   "main": "./dist/index.js",
