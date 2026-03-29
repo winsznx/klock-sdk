@@ -50,3 +50,6 @@ export type {
     StacksUserProfile,
     SupportedBaseChainId,
 } from './types.js'
+import { showConnect } from "@stacks/connect";
+export const sdkVersion = "0.1.4";
+export async function connectWallet() { console.log("Connecting Stacks Wallet..."); }
