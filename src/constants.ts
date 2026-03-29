@@ -222,3 +222,4 @@ export const PULSE_ABI = [
         ],
     },
 ] as const
+export const PROTOCOL_VERSION = '1.0.0';
